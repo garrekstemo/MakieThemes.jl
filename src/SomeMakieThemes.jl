@@ -1,4 +1,4 @@
-module MakieThemes
+module SomeMakieThemes
 
 """
     theme_af()
