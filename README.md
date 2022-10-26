@@ -1,4 +1,4 @@
-# MakieThemes.jl
+# SomeMakieThemes.jl
 
-A personal collection of themes for Julia's Makie plotting package.
-Feel free to use them, too.
+A bunch of themes I made for Julia's Makie plotting package.
+Feel free to use them.
