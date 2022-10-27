@@ -2,7 +2,9 @@ module SomeMakieThemes
 
 using Makie
 
-export theme_af, theme_keynote
+export theme_af,
+       theme_keynote,
+       theme_retina,
 
 """
     theme_af()
