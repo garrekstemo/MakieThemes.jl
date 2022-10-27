@@ -4,7 +4,7 @@ using Makie
 
 export theme_af,
        theme_keynote,
-       theme_retina,
+       theme_retina
 
 """
     theme_af()
