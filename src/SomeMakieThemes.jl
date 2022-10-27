@@ -46,4 +46,16 @@ function theme_keynote()
     )
 end
 
+"""
+    theme_retina()
+
+Theme for retina display on macOS.
+"""
+function theme_retina()
+    Theme(
+        fontsize = 25,
+        linewidth = 2,
+    )
+end
+
 end # module
