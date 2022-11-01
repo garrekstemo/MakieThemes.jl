@@ -54,9 +54,24 @@ end
 Theme for retina display on macOS.
 """
 function theme_retina()
+
+    ticksize = 10
+    width = 2
+
     Theme(
-        fontsize = 25,
-        linewidth = 2,
+        resolution = (1500, 1200),
+        fontsize = 35,
+        linewidth = 3,
+
+        Axis = (
+            xticksize = ticksize,
+            yticksize = ticksize,
+            xtickwidth = width,
+            ytickwidth = width,
+            spinewidth = width,
+            xgridwidth = width,
+            ygridwidth = width,
+        )
     )
 end
 
