@@ -63,7 +63,8 @@ end
 """
     theme_retina()
 
-Theme for retina display on macOS.
+Theme for retina display on macOS. This compensation is necessary until
+Makie becomes display-independent.
 """
 function theme_retina()
 
