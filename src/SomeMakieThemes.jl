@@ -45,18 +45,19 @@ Theme for making figures to use in an Apple Keynote presentation.
 function theme_keynote()
     Theme(
         fontsize = 28,
-        linewidth = 3
-    )
-    Axis = (
-        spinewidth = 3,
-        xtickalign = 1,
-        ytickalign = 1,
-        xticksize = 12,
-        yticksize = 12,
-        xtickwidth = 3,
-        ytickwidth = 3,
-        xgridvisible = false,
-        ygridvisible = false,
+        linewidth = 3,
+
+        Axis = (
+            spinewidth = 3,
+            xtickalign = 1,
+            ytickalign = 1,
+            xticksize = 12,
+            yticksize = 12,
+            xtickwidth = 3,
+            ytickwidth = 3,
+            xgridvisible = false,
+            ygridvisible = false,
+        ),
     )
 end
 
@@ -93,8 +94,9 @@ Theme for a printed poster at A0 size.
 """
 function theme_poster()
     Theme = (
-        fontsize = 28,
-        linewidth = 3,
+        # fontsize = 28,
+        # linewidth = 3,
+
         Axis = (
             spinewidth = 3,
             xtickalign = 1,
@@ -105,7 +107,7 @@ function theme_poster()
             ytickwidth = 3,
             xgridvisible = false,
             ygridvisible = false,
-        )
+        ),
     )
 end
 
