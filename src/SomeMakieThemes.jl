@@ -11,7 +11,7 @@ export theme_af,
 
 Theme for importing an undecorated function curve into Affinity Designer.
 """
-function theme_af()
+function theme_curveonly()
     Theme(
         backgroundcolor = :blue,
         Lines = (cycle = nothing, color = :black),
@@ -46,6 +46,17 @@ function theme_keynote()
         fontsize = 28,
         linewidth = 3
     )
+    Axis = (
+        spinewidth = 3,
+        xtickalign = 1,
+        ytickalign = 1,
+        xticksize = 12,
+        yticksize = 12,
+        xtickwidth = 3,
+        ytickwidth = 3,
+        xgridvisible = false,
+        ygridvisible = false,
+    )
 end
 
 """
@@ -71,6 +82,24 @@ function theme_retina()
             spinewidth = width,
             xgridwidth = width,
             ygridwidth = width,
+        )
+    )
+end
+
+function theme_poster()
+    Theme = (
+        fontsize = 28,
+        linewidth = 3,
+        Axis = (
+            spinewidth = 3,
+            xtickalign = 1,
+            ytickalign = 1,
+            xticksize = 12,
+            yticksize = 12,
+            xtickwidth = 3,
+            ytickwidth = 3,
+            xgridvisible = false,
+            ygridvisible = false,
         )
     )
 end
