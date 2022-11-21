@@ -2,9 +2,10 @@ module SomeMakieThemes
 
 using Makie
 
-export theme_af,
+export theme_curveonly,
        theme_keynote,
-       theme_retina
+       theme_retina,
+       theme_poster
 
 """
     theme_af()
