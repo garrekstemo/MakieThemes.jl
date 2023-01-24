@@ -90,12 +90,13 @@ function theme_retina()
 end
 """
     theme_poster()
+    
 Theme for a printed poster at A0 size.
 """
 function theme_poster()
-    Theme = (
-        # fontsize = 28,
-        # linewidth = 3,
+    Theme(
+        fontsize = 28,
+        linewidth = 3,
 
         Axis = (
             spinewidth = 3,
