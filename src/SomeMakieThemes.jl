@@ -45,6 +45,7 @@ Theme for making figures to use in an Apple Keynote presentation.
 function theme_keynote()
     Theme(
         fontsize = 28,
+        fonts = (; regular = "Helvetica"),
         linewidth = 3,
 
         Axis = (
@@ -94,11 +95,12 @@ end
 Theme for a printed poster at A0 size.
 """
 function theme_poster()
+    # fonts = (; regular = "Comic Sans ")
+
     Theme(
         fontsize = 28,
-        fontfamily = "Georgia",
         linewidth = 3,
-
+        fonts = (; regular = "Helvetica"),
         Axis = (
             spinewidth = 3,
             xtickalign = 1,
