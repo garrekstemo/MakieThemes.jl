@@ -96,6 +96,7 @@ Theme for a printed poster at A0 size.
 function theme_poster()
     Theme(
         fontsize = 28,
+        fontfamily = "Georgia",
         linewidth = 3,
 
         Axis = (
