@@ -5,7 +5,8 @@ using Makie
 export theme_curveonly,
        theme_keynote,
        theme_retina,
-       theme_poster
+       theme_poster,
+       theme_manuscript
 
 """
     theme_af()
