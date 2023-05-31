@@ -14,7 +14,7 @@ Theme for importing an undecorated function curve into Affinity Designer.
 """
 function theme_curveonly()
     Theme(
-        backgroundcolor = :blue,
+        # backgroundcolor = :blue,
         Lines = (cycle = nothing, color = :black),
 
         Axis = (
@@ -95,7 +95,6 @@ end
 Theme for a printed poster at A0 size.
 """
 function theme_poster()
-    # fonts = (; regular = "Comic Sans ")
 
     Theme(
         fontsize = 28,
@@ -114,5 +113,32 @@ function theme_poster()
         ),
     )
 end
+
+"""
+    theme_manuscript()
+
+Theme for a manuscript figure.
+"""
+function theme_manuscript()
+    Theme(
+        resolution = (450, 400),
+        
+        fontsize = 18,
+        # linewidth = 3,
+        fonts = (; regular = "Helvetica"),
+        Axis = (
+            # spinewidth = 1,
+            xtickalign = 1,
+            ytickalign = 1,
+            xticksize = 8,
+            yticksize = 8,
+            # xtickwidth = 3,
+            # ytickwidth = 3,
+            xgridvisible = false,
+            ygridvisible = false,
+        )
+    )
+end
+
 
 end # module
