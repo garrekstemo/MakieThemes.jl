@@ -6,7 +6,8 @@ export theme_curveonly,
        theme_keynote,
        theme_retina,
        theme_poster,
-       theme_manuscript
+       theme_manuscript,
+       theme_keynote_retina
 
 """
     theme_af()
@@ -90,6 +91,36 @@ function theme_retina()
         )
     )
 end
+
+"""
+    theme_keynote_retina()
+
+Theme for retina display on macOS with bigger font sizes
+and appropriate resolution for use in Keynote. This compensation is necessary until
+Makie becomes display-independent.
+"""
+function theme_keynote_retina()
+    
+        ticksize = 10
+        width = 2
+    
+        Theme(
+            resolution = (1000, 900),
+            fontsize = 36,
+            linewidth = 3,
+    
+            Axis = (
+                xticksize = ticksize,
+                yticksize = ticksize,
+                xtickwidth = width,
+                ytickwidth = width,
+                spinewidth = width,
+                xgridwidth = width,
+                ygridwidth = width,
+            )
+        )
+    end
+
 """
     theme_poster()
     
