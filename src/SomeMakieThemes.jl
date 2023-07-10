@@ -4,10 +4,11 @@ using Makie
 
 export theme_curveonly,
        theme_keynote,
+       theme_keynote_retina,
        theme_retina,
        theme_poster,
        theme_manuscript,
-       theme_keynote_retina
+       theme_manuscript_retina
 
 """
     theme_af()
