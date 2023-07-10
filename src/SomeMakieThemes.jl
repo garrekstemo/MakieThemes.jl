@@ -173,4 +173,33 @@ function theme_manuscript()
 end
 
 
+"""
+    theme_manuscript()
+
+Theme for a manuscript figure for Mac retina displays.
+"""
+function theme_manuscript_retina()
+    ticksize = 10
+    width = 2
+
+    Theme(
+        resolution = (1000, 900),
+        fontsize = 36,
+        linewidth = 3,
+        fonts = (; regular = "Helvetica"),
+        Axis = (
+            # spinewidth = 1,
+            xtickalign = 1,
+            ytickalign = 1,
+            xticksize = 8,
+            yticksize = 8,
+            # xtickwidth = 3,
+            # ytickwidth = 3,
+            xgridvisible = false,
+            ygridvisible = false,
+        )
+    )
+end
+
+
 end # module
