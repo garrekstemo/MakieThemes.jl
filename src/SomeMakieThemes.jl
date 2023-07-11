@@ -180,22 +180,22 @@ end
 Theme for a manuscript figure for Mac retina displays.
 """
 function theme_manuscript_retina()
-    ticksize = 10
-    width = 2
+    # ticksize = 35
+    # width = 5
 
     Theme(
         resolution = (1000, 900),
         fontsize = 36,
-        linewidth = 3,
+        linewidth = 4,
         fonts = (; regular = "Helvetica"),
         Axis = (
-            # spinewidth = 1,
+            spinewidth = 3,
             xtickalign = 1,
             ytickalign = 1,
-            xticksize = 8,
-            yticksize = 8,
-            # xtickwidth = 3,
-            # ytickwidth = 3,
+            xticksize = 18,
+            yticksize = 18,
+            xtickwidth = 3,
+            ytickwidth = 3,
             xgridvisible = false,
             ygridvisible = false,
         )
