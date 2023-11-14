@@ -185,8 +185,8 @@ function theme_manuscript_retina()
 
     Theme(
         resolution = (1000, 900),
-        fontsize = 36,
-        linewidth = 4,
+        fontsize = 40,
+        linewidth = 3,
         fonts = (; regular = "Helvetica"),
         Axis = (
             spinewidth = 3,
