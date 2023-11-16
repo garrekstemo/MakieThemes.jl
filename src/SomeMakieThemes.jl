@@ -109,7 +109,7 @@ function theme_keynote_retina()
             resolution = (1000, 900),
             fontsize = 40,
             linewidth = 4,
-            fonts = (; regular = "Helvetica")
+            fonts = (; regular = "Helvetica"),
     
             Axis = (
                 xticksize = ticksize,
