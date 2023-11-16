@@ -102,13 +102,14 @@ Makie becomes display-independent.
 """
 function theme_keynote_retina()
     
-        ticksize = 10
-        width = 2
+        ticksize = 18
+        width = 3
     
         Theme(
             resolution = (1000, 900),
-            fontsize = 36,
-            linewidth = 3,
+            fontsize = 40,
+            linewidth = 4,
+            fonts = (; regular = "Helvetica")
     
             Axis = (
                 xticksize = ticksize,
@@ -118,6 +119,8 @@ function theme_keynote_retina()
                 spinewidth = width,
                 xgridwidth = width,
                 ygridwidth = width,
+                xgridvisible = false,
+                ygridvisible = false,
             )
         )
     end
