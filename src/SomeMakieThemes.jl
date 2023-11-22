@@ -77,7 +77,7 @@ function theme_retina()
     width = 2
 
     Theme(
-        resolution = (1500, 1200),
+        size = (1500, 1200),
         fontsize = 35,
         linewidth = 3,
 
@@ -97,7 +97,7 @@ end
     theme_keynote_retina()
 
 Theme for retina display on macOS with bigger font sizes
-and appropriate resolution for use in Keynote. This compensation is necessary until
+and appropriate size for use in Keynote. This compensation is necessary until
 Makie becomes display-independent.
 """
 function theme_keynote_retina()
@@ -106,7 +106,7 @@ function theme_keynote_retina()
         width = 3
     
         Theme(
-            resolution = (1000, 900),
+            size = (1000, 900),
             fontsize = 40,
             linewidth = 4,
             fonts = (; regular = "Helvetica"),
@@ -157,7 +157,7 @@ Theme for a manuscript figure.
 """
 function theme_manuscript()
     Theme(
-        resolution = (450, 400),
+        size = (450, 400),
         
         fontsize = 18,
         # linewidth = 3,
@@ -187,7 +187,7 @@ function theme_manuscript_retina()
     # width = 5
 
     Theme(
-        resolution = (1000, 900),
+        size = (1000, 900),
         fontsize = 40,
         linewidth = 3,
         fonts = (; regular = "Helvetica"),
