@@ -2,7 +2,7 @@ module SomeMakieThemes
 
 using Makie
 
-export theme_curveonly,
+export theme_curvesonly,
        theme_keynote,
        theme_keynote_retina,
        theme_retina,
@@ -11,11 +11,12 @@ export theme_curveonly,
        theme_manuscript_retina
 
 """
-    theme_af()
+    theme_curvesonly()
 
-Theme for importing an undecorated function curve into Affinity Designer.
+Theme that only displays the function curves 
+and removes all spines, labels, and other axis attributes.
 """
-function theme_curveonly()
+function theme_curvesonly()
     Theme(
         # backgroundcolor = :blue,
         Lines = (cycle = nothing, color = :black),
@@ -47,18 +48,18 @@ Theme for making figures to use in an Apple Keynote presentation.
 """
 function theme_keynote()
     Theme(
-        fontsize = 28,
+        fontsize = 24,
         fonts = (; regular = "Helvetica"),
-        linewidth = 3,
+        linewidth = 2.5,
 
         Axis = (
-            spinewidth = 3,
-            xtickalign = 1,
-            ytickalign = 1,
             xticksize = 12,
             yticksize = 12,
-            xtickwidth = 3,
-            ytickwidth = 3,
+            spinewidth = 2,
+            xtickwidth = 2,
+            ytickwidth = 2,
+            xtickalign = 1,
+            ytickalign = 1,
             xgridvisible = false,
             ygridvisible = false,
         ),
@@ -68,22 +69,22 @@ end
 """
     theme_poster()
     
-Theme for a printed poster at A0 size.
+Theme for a printed poster at A0 paper size.
 """
 function theme_poster()
-
     Theme(
-        fontsize = 28,
-        linewidth = 3,
+        fontsize = 24,
         fonts = (; regular = "Helvetica"),
+        linewidth = 2.5,
+
         Axis = (
-            spinewidth = 3,
-            xtickalign = 1,
-            ytickalign = 1,
             xticksize = 12,
             yticksize = 12,
-            xtickwidth = 3,
-            ytickwidth = 3,
+            xtickwidth = 2,
+            ytickwidth = 2,
+            spinewidth = 2,
+            xtickalign = 1,
+            ytickalign = 1,
             xgridvisible = false,
             ygridvisible = false,
         ),
@@ -97,19 +98,16 @@ Theme for a manuscript figure.
 """
 function theme_manuscript()
     Theme(
-        size = (450, 400),
-        
         fontsize = 18,
-        # linewidth = 3,
         fonts = (; regular = "Helvetica"),
         Axis = (
-            # spinewidth = 1,
-            xtickalign = 1,
-            ytickalign = 1,
             xticksize = 8,
             yticksize = 8,
-            # xtickwidth = 3,
-            # ytickwidth = 3,
+            spinewidth = 1.5,
+            xtickwidth = 1.5,
+            ytickwidth = 1.5,
+            xtickalign = 1,
+            ytickalign = 1,
             xgridvisible = false,
             ygridvisible = false,
         )
